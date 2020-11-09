@@ -9,7 +9,6 @@ Second path.join is what the new name of the file will be (random ID generated b
 
 
 const rename = () => {
-  for (let i = 1000; i <= 1000; i++) {
     fs.rename(
       path.join(__dirname, '/files', 'test.csv'), // original file goes here
       path.join(__dirname, '/files', `test-${id}.csv`), // new file with id variable goes here
@@ -18,11 +17,9 @@ const rename = () => {
         console.log('File Renamed 😀');
       }
     );
-  }
 };
 
 const renameOtherFile = () => {
-  for (let i = 1000; i <= 1000; i++) {
     fs.rename(
       path.join(__dirname, '/files', 'test-again.csv'), // original file goes here
       path.join(__dirname, '/files', `test-again-${id}.csv`), // new file with id variable goes here
@@ -31,7 +28,6 @@ const renameOtherFile = () => {
         console.log('File Renamed 😀');
       }
     );
-  }
 };
 
 rename();
